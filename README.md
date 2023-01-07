@@ -1,2 +1,2 @@
 # UniversityWebTemplate
-Virtual University Website Template Using HTML CSS
+Virtual Website Template For Cairo University 👨‍🎓
