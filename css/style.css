@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Changa', sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* End General rules */
@@ -29,12 +30,20 @@ body {
 
 }
 
-.header .nav .logo {
+.header .nav .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .nav .logo-container .logo {
   text-decoration: none;
   color: #fff;
   font-size: 30px;
   font-weight: 900;
+  text-align: center;
 }
+
 
 .header .nav .nav-links {
   flex: auto;
@@ -84,7 +93,7 @@ body {
 }
 
 /* Header End */
-
+/* landing start */
 .text-box {
   width: 80%;
   position: absolute;
@@ -115,3 +124,108 @@ body {
 .text-box a:hover {
   padding: 10px;
 }
+
+/* landing end */
+/* start certificates */
+.certificates {
+  background-image: linear-gradient(rgba(4, 30, 9, 0.9), rgba(250, 250, 250, 0.6)), url(../images/certificates.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 50px;
+  color: white
+}
+
+.cards-container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding: 30px;
+}
+
+.cards-container .card {
+  margin: 20px 10px;
+  background-color: #ddd;
+  border-radius: 2px;
+  color: black;
+}
+
+.certificates .cards-container .card h3 {
+  padding-top: 5px;
+}
+
+.certificates .cards-container .card p {
+  padding: 10px;
+}
+
+/* certificates end */
+/* university start */
+.university {
+  background-color: rgb(6, 55, 6);
+}
+
+.university .cards-container {
+  grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+  text-align: center;
+}
+
+.university .cards-container i {
+  font-size: 50px;
+}
+
+.university .cards-container .card {
+  background-color: transparent;
+  color: white;
+}
+
+/* university end */
+/* start testimonial  */
+.testimonial {
+  background-color: rgb(6, 55, 6);
+
+}
+
+.testimonial h1 {
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.testimonial .cards-container {
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px
+}
+
+.testimonial .cards-container .card {
+  text-align: center;
+  padding: 15px;
+}
+
+/* testimonial end */
+/* footer start */
+.footer {
+  padding: 30px;
+}
+
+.footer .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer-links a {
+  padding: 0 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.footer .footer-links a:hover {
+  color: cadetblue;
+}
+
+.footer p {
+  text-align: center;
+}
+
+/* footer end */
